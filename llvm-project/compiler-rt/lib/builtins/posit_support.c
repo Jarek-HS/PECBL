@@ -279,7 +279,7 @@ bool posit_64_ge(uint64_t x, uint64_t y) {
 
 //posit64 operation
 uint64_t posit64_2_add(uint64_t x, uint64_t y) {
-    posit64_t pa = posit64_ㄉ(x);
+    posit64_t pa = posit64_reinterpret(x);
     posit64_t pb = posit64_reinterpret(y);
     posit64_t sum = posit64_add(pa, pb); 
     return sum.v;
