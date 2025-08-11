@@ -1,3 +1,0 @@
-# Benchmarking
-
-https://openbenchmarking.org/

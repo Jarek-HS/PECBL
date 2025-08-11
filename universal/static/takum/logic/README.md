@@ -1,1 +1,0 @@
-# Logic operator regression suites

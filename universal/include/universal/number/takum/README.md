@@ -1,3 +1,0 @@
-# Takum Arithmetic
-
-reference: 

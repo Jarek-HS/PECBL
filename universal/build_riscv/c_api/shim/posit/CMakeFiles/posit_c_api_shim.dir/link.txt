@@ -1,2 +1,0 @@
-/home/jiahua/riscv/riscv-gnu-toolchain/build/bin/riscv64-unknown-linux-gnu-ar qc libposit_c_api_shim.a CMakeFiles/posit_c_api_shim.dir/posit_c_api.cpp.o
-/home/jiahua/riscv/riscv-gnu-toolchain/build/bin/riscv64-unknown-linux-gnu-ranlib libposit_c_api_shim.a
