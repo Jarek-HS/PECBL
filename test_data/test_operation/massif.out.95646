@@ -1,0 +1,1098 @@
+desc: (none)
+cmd: qemu-riscv64 ./test_compiler
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2774984
+mem_heap_B=2063394
+mem_heap_extra_B=14046
+mem_stacks_B=0
+heap_tree=detailed
+n6: 2063394 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 683240 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n1: 655296 0x21D048: ??? (in /usr/bin/qemu-riscv64)
+  n1: 655296 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 655296 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n3: 128432 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 41448 in 22 places, all below massif's threshold (1.00%)
+  n1: 21432 0x230F5B: ??? (in /usr/bin/qemu-riscv64)
+   n0: 21432 in 19 places, all below massif's threshold (1.00%)
+ n1: 56236 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 56236 in 23 places, all below massif's threshold (1.00%)
+ n0: 15838 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=14002991
+mem_heap_B=2102802
+mem_heap_extra_B=322006
+mem_stacks_B=0
+heap_tree=peak
+n7: 2102802 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 683240 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 347352 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n1: 347352 0x4ADDE8A: qsort_r (qsort.c:361)
+  n1: 347352 0x21D0FF: ??? (in /usr/bin/qemu-riscv64)
+   n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+    n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n2: 128432 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 62880 in 23 places, all below massif's threshold (1.00%)
+ n1: 56236 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 56236 in 23 places, all below massif's threshold (1.00%)
+ n0: 15838 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=19999275
+mem_heap_B=1799612
+mem_heap_extra_B=327796
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=24691915
+mem_heap_B=1803852
+mem_heap_extra_B=329716
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1803852 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 136304 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 49320 in 25 places, all below massif's threshold (1.00%)
+  n1: 21432 0x230F5B: ??? (in /usr/bin/qemu-riscv64)
+   n0: 21432 in 19 places, all below massif's threshold (1.00%)
+ n2: 96181 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 63397 in 31 places, all below massif's threshold (1.00%)
+  n1: 32784 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16062 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=32910780
+mem_heap_B=1810692
+mem_heap_extra_B=332452
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=38615689
+mem_heap_B=1815892
+mem_heap_extra_B=334308
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=45989137
+mem_heap_B=1822212
+mem_heap_extra_B=336836
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=50718422
+mem_heap_B=1826244
+mem_heap_extra_B=338660
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=58562415
+mem_heap_B=1863828
+mem_heap_extra_B=344428
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=64575348
+mem_heap_B=1868548
+mem_heap_extra_B=346348
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=72407504
+mem_heap_B=1873668
+mem_heap_extra_B=346828
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=82154977
+mem_heap_B=1879420
+mem_heap_extra_B=350652
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=104250683
+mem_heap_B=1879872
+mem_heap_extra_B=350672
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=108439713
+mem_heap_B=1883468
+mem_heap_extra_B=352092
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=118077357
+mem_heap_B=1891588
+mem_heap_extra_B=355564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=124017309
+mem_heap_B=1897228
+mem_heap_extra_B=357820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=130972690
+mem_heap_B=1903388
+mem_heap_extra_B=360284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=137952395
+mem_heap_B=1909300
+mem_heap_extra_B=362604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=146960240
+mem_heap_B=1916148
+mem_heap_extra_B=365388
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=155930949
+mem_heap_B=1923388
+mem_heap_extra_B=368284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=161904623
+mem_heap_B=1928588
+mem_heap_extra_B=370140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=167231652
+mem_heap_B=1932188
+mem_heap_extra_B=371132
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1932188 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 224037 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 103960 0x49E088D: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+   n1: 103960 0x214E90: ??? (in /usr/bin/qemu-riscv64)
+    n1: 103960 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+     n1: 103960 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+      n1: 103960 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+       n1: 103960 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+        n0: 103960 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n2: 65568 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+   n1: 32784 0x257329: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x259BFF: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270C9D: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 54509 in 30 places, all below massif's threshold (1.00%)
+ n2: 136304 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 70752 in 26 places, all below massif's threshold (1.00%)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16542 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=172569552
+mem_heap_B=1935668
+mem_heap_extra_B=373196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=179563936
+mem_heap_B=1936060
+mem_heap_extra_B=373308
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=186882466
+mem_heap_B=1941468
+mem_heap_extra_B=375516
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=192487352
+mem_heap_B=1945068
+mem_heap_extra_B=376956
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=216992822
+mem_heap_B=1945380
+mem_heap_extra_B=377036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=222300280
+mem_heap_B=1949548
+mem_heap_extra_B=378748
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=227794044
+mem_heap_B=1953988
+mem_heap_extra_B=380300
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=236610889
+mem_heap_B=1961588
+mem_heap_extra_B=383564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=240158820
+mem_heap_B=1964740
+mem_heap_extra_B=384780
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=247319555
+mem_heap_B=1967468
+mem_heap_extra_B=385916
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=282148817
+mem_heap_B=1967548
+mem_heap_extra_B=385948
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=288413826
+mem_heap_B=1968908
+mem_heap_extra_B=386492
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=296392098
+mem_heap_B=1969148
+mem_heap_extra_B=386588
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=325906609
+mem_heap_B=1969188
+mem_heap_extra_B=386604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=332007877
+mem_heap_B=1969668
+mem_heap_extra_B=386796
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=367703585
+mem_heap_B=1969708
+mem_heap_extra_B=386812
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=378054790
+mem_heap_B=1969748
+mem_heap_extra_B=386828
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=444217382
+mem_heap_B=1969828
+mem_heap_extra_B=386860
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=446145489
+mem_heap_B=1969908
+mem_heap_extra_B=386892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=478762286
+mem_heap_B=1969948
+mem_heap_extra_B=386908
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1969948 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 262277 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 142200 0x49E088D: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+   n1: 142200 0x214E90: ??? (in /usr/bin/qemu-riscv64)
+    n1: 142200 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+     n1: 142200 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+      n1: 142200 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+       n1: 142200 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+        n0: 142200 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n2: 65568 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+   n1: 32784 0x257329: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x259BFF: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270C9D: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 54509 in 30 places, all below massif's threshold (1.00%)
+ n2: 136304 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 70752 in 26 places, all below massif's threshold (1.00%)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16062 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=765781434
+mem_heap_B=1969988
+mem_heap_extra_B=386924
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=809891454
+mem_heap_B=1970028
+mem_heap_extra_B=386940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=889672839
+mem_heap_B=1970108
+mem_heap_extra_B=386972
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=891565366
+mem_heap_B=1971348
+mem_heap_extra_B=387468
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=932758815
+mem_heap_B=1971952
+mem_heap_extra_B=387504
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=970486629
+mem_heap_B=1971908
+mem_heap_extra_B=387692
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2112734875
+mem_heap_B=1971948
+mem_heap_extra_B=387708
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2978648924
+mem_heap_B=1972028
+mem_heap_extra_B=387740
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2980547964
+mem_heap_B=1973788
+mem_heap_extra_B=388444
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=5442797838
+mem_heap_B=1974148
+mem_heap_extra_B=388588
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1974148 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 266477 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 146400 0x49E088D: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+   n1: 146400 0x214E90: ??? (in /usr/bin/qemu-riscv64)
+    n1: 146400 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+     n1: 146400 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+      n1: 146400 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+       n1: 146400 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+        n0: 146400 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n2: 65568 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+   n1: 32784 0x257329: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x259BFF: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270C9D: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 54509 in 30 places, all below massif's threshold (1.00%)
+ n2: 136304 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 70752 in 26 places, all below massif's threshold (1.00%)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16062 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=11234126816
+mem_heap_B=1974276
+mem_heap_extra_B=388652
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=11510742730
+mem_heap_B=1974244
+mem_heap_extra_B=388652
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=16604984849
+mem_heap_B=1975764
+mem_heap_extra_B=389260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=16642239698
+mem_heap_B=1976524
+mem_heap_extra_B=389564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=19913110813
+mem_heap_B=1977164
+mem_heap_extra_B=389820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=20318970538
+mem_heap_B=1977244
+mem_heap_extra_B=389852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=31494119401
+mem_heap_B=1977488
+mem_heap_extra_B=389760
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=31534655792
+mem_heap_B=1977724
+mem_heap_extra_B=390044
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=41563266966
+mem_heap_B=1977764
+mem_heap_extra_B=390060
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=47031576237
+mem_heap_B=1978084
+mem_heap_extra_B=390188
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1978084 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 270413 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 150480 0x49E088D: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+   n1: 150480 0x214E90: ??? (in /usr/bin/qemu-riscv64)
+    n1: 150480 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+     n1: 150480 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+      n1: 150480 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+       n1: 150480 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+        n0: 150480 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n2: 65568 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+   n1: 32784 0x257329: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x259BFF: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270C9D: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 54365 in 30 places, all below massif's threshold (1.00%)
+ n2: 136304 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 70752 in 26 places, all below massif's threshold (1.00%)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16062 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=75685342989
+mem_heap_B=1978204
+mem_heap_extra_B=390236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=99108512290
+mem_heap_B=1978284
+mem_heap_extra_B=390268
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=109481769036
+mem_heap_B=1978484
+mem_heap_extra_B=390348
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=140826636348
+mem_heap_B=1978684
+mem_heap_extra_B=390428
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=190376222345
+mem_heap_B=1978804
+mem_heap_extra_B=390476
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=276729055943
+mem_heap_B=1978964
+mem_heap_extra_B=390540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1135436536037
+mem_heap_B=1979044
+mem_heap_extra_B=390572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1226075843091
+mem_heap_B=1979204
+mem_heap_extra_B=390636
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=2778206071890
+mem_heap_B=1979476
+mem_heap_extra_B=390700
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=3715536643541
+mem_heap_B=1979648
+mem_heap_extra_B=390624
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1979648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 271813 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 151880 0x49E088D: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+   n1: 151880 0x214E90: ??? (in /usr/bin/qemu-riscv64)
+    n1: 151880 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+     n1: 151880 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+      n1: 151880 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+       n1: 151880 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+        n0: 151880 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n2: 65568 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+   n1: 32784 0x257329: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x259BFF: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270C9D: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 54365 in 30 places, all below massif's threshold (1.00%)
+ n2: 136308 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 70756 in 26 places, all below massif's threshold (1.00%)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16222 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=10731446580899
+mem_heap_B=1979716
+mem_heap_extra_B=390796
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=40995658051928
+mem_heap_B=1979888
+mem_heap_extra_B=390720
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=40995660057046
+mem_heap_B=1980644
+mem_heap_extra_B=391212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=40995661979973
+mem_heap_B=1982244
+mem_heap_extra_B=391852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=40995663880146
+mem_heap_B=1983884
+mem_heap_extra_B=392508
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=40995665781026
+mem_heap_B=1985604
+mem_heap_extra_B=393196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=40995667677618
+mem_heap_B=1987236
+mem_heap_extra_B=393804
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=40995669586310
+mem_heap_B=1988964
+mem_heap_extra_B=394540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=40995671481983
+mem_heap_B=1990836
+mem_heap_extra_B=395244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=40995673378539
+mem_heap_B=1992484
+mem_heap_extra_B=395724
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1992484 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 683457 0x21CDE6: ??? (in /usr/bin/qemu-riscv64)
+  n1: 683240 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 683240 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 217 in 1 place, below massif's threshold (1.00%)
+ n2: 524352 0x2414CB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 524288 0x241649: ??? (in /usr/bin/qemu-riscv64)
+   n1: 524288 0x20A727: ??? (in /usr/bin/qemu-riscv64)
+    n1: 524288 0x147109: ??? (in /usr/bin/qemu-riscv64)
+     n0: 524288 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n2: 347496 0x21D0DB: ??? (in /usr/bin/qemu-riscv64)
+  n1: 347352 0x147740: ??? (in /usr/bin/qemu-riscv64)
+   n0: 347352 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 144 in 1 place, below massif's threshold (1.00%)
+ n3: 284653 0x49ADB09: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n1: 164720 0x49E088D: ??? (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+   n1: 164720 0x214E90: ??? (in /usr/bin/qemu-riscv64)
+    n1: 164720 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+     n1: 164720 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+      n1: 164720 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+       n1: 164720 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+        n0: 164720 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n2: 65568 0x246112: ??? (in /usr/bin/qemu-riscv64)
+   n1: 32784 0x249619: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x250E13: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270B73: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+   n1: 32784 0x257329: ??? (in /usr/bin/qemu-riscv64)
+    n1: 32784 0x259BFF: ??? (in /usr/bin/qemu-riscv64)
+     n1: 32784 0x270C9D: ??? (in /usr/bin/qemu-riscv64)
+      n1: 32784 0x2146F2: ??? (in /usr/bin/qemu-riscv64)
+       n1: 32784 0x26C900: ??? (in /usr/bin/qemu-riscv64)
+        n1: 32784 0x273AEE: ??? (in /usr/bin/qemu-riscv64)
+         n1: 32784 0x15468D: ??? (in /usr/bin/qemu-riscv64)
+          n1: 32784 0x14917F: ??? (in /usr/bin/qemu-riscv64)
+           n0: 32784 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+  n0: 54365 in 30 places, all below massif's threshold (1.00%)
+ n2: 136304 0x49AE7B1: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0)
+  n0: 70752 in 26 places, all below massif's threshold (1.00%)
+  n1: 65552 0x20BFF4: ??? (in /usr/bin/qemu-riscv64)
+   n1: 65552 0x1529AC: ??? (in /usr/bin/qemu-riscv64)
+    n1: 65552 0x233FFD: ??? (in /usr/bin/qemu-riscv64)
+     n1: 65552 0x2393BC: ??? (in /usr/bin/qemu-riscv64)
+      n1: 65552 0x23CBFB: ??? (in /usr/bin/qemu-riscv64)
+       n1: 65552 0x23CD40: ??? (in /usr/bin/qemu-riscv64)
+        n1: 65552 0x151A97: ??? (in /usr/bin/qemu-riscv64)
+         n1: 65552 0x147115: ??? (in /usr/bin/qemu-riscv64)
+          n0: 65552 0x4ABE1C9: (below main) (libc_start_call_main.h:58)
+ n0: 16222 in 11 places, all below massif's threshold (1.00%)
